@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kot Addu Home Delivery</title>
-
-<style>
+<title>Kot Addu Home Delivery</title><style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
 }
 
 body{
@@ -45,6 +42,26 @@ header p{
   text-decoration:none;
   border-radius:30px;
   font-weight:bold;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:62px;
+  height:62px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:32px;
+  box-shadow:0 5px 18px rgba(0,0,0,.25);
+  z-index:9999;
 }
 
 .container{
@@ -116,6 +133,54 @@ header p{
   margin:8px 0;
 }
 
+/* ORDER FORM */
+
+.order-form{
+  background:white;
+  margin-top:45px;
+  padding:35px 25px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.order-form h2{
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.order-form .subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:25px;
+}
+
+.order-form input,
+.order-form textarea{
+  width:100%;
+  padding:14px;
+  margin:8px 0 15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+}
+
+.order-form textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+.send-order{
+  width:100%;
+  border:0;
+  padding:15px;
+  background:#25D366;
+  color:white;
+  border-radius:30px;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
 .order{
   margin-top:45px;
   background:#111;
@@ -151,6 +216,7 @@ footer strong{
 }
 
 @media(max-width:600px){
+
   header h1{
     font-size:32px;
   }
@@ -158,173 +224,296 @@ footer strong{
   .section-title h2{
     font-size:27px;
   }
+
+  .floating-whatsapp{
+    right:15px;
+    bottom:15px;
+    width:58px;
+    height:58px;
+    font-size:29px;
+  }
 }
-</style>
-</head>
+</style></head><body><header>  <h1>🏠 Kot Addu Home Delivery</h1>  <p>Anything You Need, Delivered to Your Door</p><a class="whatsapp"
+href="https://wa.me/923437490138"
+target="_blank">
+Order on WhatsApp
+</a>
 
-<body>
+</header><div class="container">  <div class="section-title"><h2>Our Home Delivery Services</h2>
 
-<header>
-  <h1>🏠 Kot Addu Home Delivery</h1>
-  <p>Anything You Need, Delivered to Your Door</p>
+<p>We deliver items anywhere within Kot Addu.</p>
 
-  <a class="whatsapp"
-     href="https://wa.me/923437490138"
-     target="_blank">
-     Order on WhatsApp
-  </a>
-</header>
+  </div>  <div class="services"><div class="card">
 
-<div class="container">
+  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
+       alt="Grocery and Rashan">
 
-  <div class="section-title">
-    <h2>Our Home Delivery Services</h2>
-    <p>We deliver items anywhere within Kot Addu.</p>
-  </div>
+  <div class="card-content">
 
-  <div class="services">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
-           alt="Grocery and Rashan">
-      <div class="card-content">
-        <h3>🛒 Grocery & Rashan</h3>
-        <p>Daily grocery, rashan and household essentials delivered to your home.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80"
-           alt="Medicine Delivery">
-      <div class="card-content">
-        <h3>💊 Medicine</h3>
-        <p>Get your required medicines delivered conveniently to your doorstep.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
-           alt="Food Delivery">
-      <div class="card-content">
-        <h3>🍔 Food</h3>
-        <p>Order food from your favorite restaurants and get it delivered.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=80"
-           alt="Milk and Dairy">
-      <div class="card-content">
-        <h3>🥛 Milk & Dairy</h3>
-        <p>Milk, yogurt and other dairy products delivered to your home.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=80"
-           alt="General Shopping">
-      <div class="card-content">
-        <h3>🛍️ General Shopping</h3>
-        <p>Tell us what you need and we can shop for you.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
-           alt="Market Shopping">
-      <div class="card-content">
-        <h3>🏪 Any Market Item</h3>
-        <p>Need something from the market? We will pick it up and deliver it.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- PERSONAL HOME DELIVERY -->
-  <div class="info">
-
-    <h2>🚴 Personal Home Delivery</h2>
-
-    <img
-      src="https://images.pexels.com/photos/7362948/pexels-photo-7362948.jpeg"
-      alt="Personal Home Delivery Rider"
-      style="
-        width:100%;
-        max-height:360px;
-        object-fit:cover;
-        border-radius:18px;
-        margin:20px 0;
-      "
-    >
+    <h3>🛒 Grocery & Rashan</h3>
 
     <p>
-      Need something delivered personally? We provide convenient
-      home delivery service throughout Kot Addu.
+      Daily grocery, rashan and household essentials
+      delivered to your home.
     </p>
-
-    <p><strong>🕐 Delivery Hours:</strong> 8:00 AM – 11:00 PM</p>
-
-    <p>
-      <strong>📍 Service Area:</strong> Kot Addu only
-    </p>
-
-    <p>
-      <strong>💰 Delivery Charges:</strong> Charges are negotiated
-      according to each order.
-    </p>
-
-  </div>
-
-  <div class="info">
-
-    <h2>💳 Payment & Charges</h2>
-
-    <p>
-      <strong>Option 1:</strong> Customer pays the item cost
-      plus delivery charges upfront.
-    </p>
-
-    <p>
-      <strong>Option 2:</strong> Payment arrangement can be decided
-      according to customer preference.
-    </p>
-
-  </div>
-
-  <div class="order">
-
-    <h2>📲 Place Your Order</h2>
-
-    <p>
-      Contact us on WhatsApp and tell us what you need.
-    </p>
-
-    <a class="whatsapp"
-       href="https://wa.me/923437490138"
-       target="_blank">
-       WhatsApp: 0343-7490138
-    </a>
-
-  </div>
-
-  <div class="info">
-
-    <h2>👤 Service Provider</h2>
-
-    <p><strong>Name:</strong> Muhammad Bilal Haiderder</p>
-
-    <p><strong>Business:</strong> Kot Addu Home Delivery</p>
-
-    <p><strong>Area:</strong> Kot Addu</p>
 
   </div>
 
 </div>
 
-<footer>
-  © 2026 <strong>Kot Addu Home Delivery</strong> —
-  Fast & Convenient Doorstep Service
-</footer>
+<div class="card">
 
-</body>
+  <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80"
+       alt="Medicine Delivery">
+
+  <div class="card-content">
+
+    <h3>💊 Medicine</h3>
+
+    <p>
+      Get your required medicines delivered conveniently
+      to your doorstep.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+       alt="Food Delivery">
+
+  <div class="card-content">
+
+    <h3>🍔 Food</h3>
+
+    <p>
+      Order food from your favorite restaurants
+      and get it delivered.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=80"
+       alt="Milk and Dairy">
+
+  <div class="card-content">
+
+    <h3>🥛 Milk & Dairy</h3>
+
+    <p>
+      Milk, yogurt and other dairy products
+      delivered to your home.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=80"
+       alt="General Shopping">
+
+  <div class="card-content">
+
+    <h3>🛍️ General Shopping</h3>
+
+    <p>
+      Tell us what you need and we can shop for you.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+       alt="Market Shopping">
+
+  <div class="card-content">
+
+    <h3>🏪 Any Market Item</h3>
+
+    <p>
+      Need something from the market?
+      We will pick it up and deliver it.
+    </p>
+
+  </div>
+
+</div>
+
+  </div>  <!-- PERSONAL HOME DELIVERY -->  <div class="info"><h2>🚴 Personal Home Delivery</h2>
+
+<img
+  src="https://images.pexels.com/photos/7362948/pexels-photo-7362948.jpeg"
+  alt="Personal Home Delivery Rider"
+  style="
+    width:100%;
+    max-height:360px;
+    object-fit:cover;
+    border-radius:18px;
+    margin:20px 0;
+  "
+>
+
+<p>
+  Need something delivered personally?
+  We provide convenient home delivery service
+  throughout Kot Addu.
+</p>
+
+<p>
+  <strong>🕐 Delivery Hours:</strong>
+  8:00 AM – 11:00 PM
+</p>
+
+<p>
+  <strong>📍 Service Area:</strong>
+  Kot Addu only
+</p>
+
+<p>
+  <strong>💰 Delivery Charges:</strong>
+  Charges are negotiated according to each order.
+</p>
+
+  </div>  <!-- PAYMENT -->  <div class="info"><h2>💳 Payment & Charges</h2>
+
+<p>
+  <strong>Option 1:</strong>
+  Customer pays the item cost plus delivery charges upfront.
+</p>
+
+<p>
+  <strong>Option 2:</strong>
+  Payment arrangement can be decided according to
+  customer preference.
+</p>
+
+  </div>  <!-- ENTER YOUR ORDER -->  <div class="order-form"><h2>📝 Enter Your Order</h2>
+
+<p class="subtitle">
+  Fill in your information and send your order directly on WhatsApp.
+</p>
+
+<form onsubmit="sendOrder(event)">
+
+  <input
+    type="text"
+    id="customerName"
+    placeholder="Enter Your Name"
+    required
+  >
+
+  <input
+    type="tel"
+    id="customerPhone"
+    placeholder="Enter Your Phone Number"
+    required
+  >
+
+  <input
+    type="text"
+    id="customerAddress"
+    placeholder="Enter Your Delivery Address"
+    required
+  >
+
+  <textarea
+    id="customerOrder"
+    placeholder="Enter Your Order Details"
+    required
+  ></textarea>
+
+  <button class="send-order" type="submit">
+    📲 Send Order on WhatsApp
+  </button>
+
+</form>
+
+  </div>  <!-- ORDER -->  <div class="order"><h2>📲 Place Your Order</h2>
+
+<p>
+  Contact us on WhatsApp and tell us what you need.
+</p>
+
+<a class="whatsapp"
+   href="https://wa.me/923437490138"
+   target="_blank">
+
+   WhatsApp: 0343-7490138
+
+</a>
+
+  </div>  <!-- SERVICE PROVIDER -->  <div class="info"><h2>👤 Service Provider</h2>
+
+<p>
+  <strong>Name:</strong>
+  Muhammad Bilal Haiderder
+</p>
+
+<p>
+  <strong>Business:</strong>
+  Kot Addu Home Delivery
+</p>
+
+<p>
+  <strong>Area:</strong>
+  Kot Addu
+</p>
+
+  </div></div><footer>© 2026
+<strong>Kot Addu Home Delivery</strong>
+—
+Fast & Convenient Doorstep Service
+
+</footer><!-- FLOATING WHATSAPP BUTTON --><a
+class="floating-whatsapp"
+href="https://wa.me/923437490138"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+<script>
+
+function sendOrder(event){
+
+  event.preventDefault();
+
+  let name =
+    document.getElementById("customerName").value;
+
+  let phone =
+    document.getElementById("customerPhone").value;
+
+  let address =
+    document.getElementById("customerAddress").value;
+
+  let order =
+    document.getElementById("customerOrder").value;
+
+  let message =
+    "Hello Kot Addu Home Delivery,%0A%0A" +
+    "Customer Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone Number: " + encodeURIComponent(phone) + "%0A" +
+    "Delivery Address: " + encodeURIComponent(address) + "%0A" +
+    "Order Details: " + encodeURIComponent(order);
+
+  window.open(
+    "https://wa.me/923437490138?text=" + message,
+    "_blank"
+  );
+
+}
+
+</script></body>
 </html>
