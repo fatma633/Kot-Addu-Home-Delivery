@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kot Addu Home Delivery</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#f7f7f7}
+nav{background:#111;color:white;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000}
+.logo{font-size:22px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.hero{min-height:85vh;background:linear-gradient(#0008,#0008),url("https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1600&q=80") center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:30px}
+.hero h1{font-size:48px;margin-bottom:15px}
+.hero p{font-size:20px;margin-bottom:25px}
+.btn{display:inline-block;background:#25d366;color:white;padding:13px 24px;border-radius:30px;text-decoration:none;font-weight:bold}
+section{padding:65px 7%}
+.section-title{text-align:center;font-size:32px;margin-bottom:35px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img{width:100%;height:350px;object-fit:cover;border-radius:15px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px #0002}
+.card img{width:100%;height:190px;object-fit:cover}
+.card-content{padding:20px}
+.card h3{margin-bottom:10px}
+.delivery{background:#eee}
+.delivery-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.delivery-box img{width:100%;height:380px;object-fit:cover;border-radius:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.step{background:white;padding:25px;border-radius:15px;box-shadow:0 3px 12px #0001}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:12px}
+.review{background:white;padding:25px;border-radius:15px;box-shadow:0 3px 12px #0001}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+form{background:white;padding:25px;border-radius:15px}
+input,textarea{width:100%;padding:13px;margin:8px 0 15px;border:1px solid #ddd;border-radius:8px}
+button{border:0;cursor:pointer}
+footer{background:#111;color:white;text-align:center;padding:30px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:999}
+@media(max-width:800px){
+nav{flex-direction:column;gap:10px}
+.hero h1{font-size:34px}
+.about,.delivery-box,.contact{grid-template-columns:1fr}
+.cards,.steps,.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Kot Addu Home Delivery</div>
+<div>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h1>Kot Addu Home Delivery</h1>
+<p>Fast, Reliable & Convenient Delivery Service in Kot Addu</p>
+<a class="btn" href="https://wa.me/923437490138">Order on WhatsApp</a>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">About Us</h2>
+<div class="about">
+<div>
+<h2>Your Trusted Local Delivery Service</h2>
+<p>We provide fast and reliable home delivery services in Kot Addu. Whether you need food, groceries, medicines, documents or other items, we help deliver them safely to your doorstep.</p>
+<br>
+<p><b>Working Hours:</b> 8:00 AM – 5:00 PM</p>
+<p><b>Location:</b> Kot Addu, Punjab, Pakistan</p>
+</div>
+<img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1000&q=80" alt="Home delivery">
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Food Delivery</h3><p>Get your favorite food delivered to your home.</p></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Grocery Delivery</h3><p>We deliver daily grocery items to your doorstep.</p></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Medicine Delivery</h3><p>Convenient delivery of medicines and pharmacy items.</p></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Parcel Delivery</h3><p>Send small parcels safely around Kot Addu.</p></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586528116493-da8e0e0d2f7d?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Document Delivery</h3><p>Fast delivery of important documents and papers.</p></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601598851547-4302969d7d3c?auto=format&fit=crop&w=900&q=80">
+<div class="card-content"><h3>Custom Delivery</h3><p>Need something else delivered? Contact us.</p></div>
+</div>
+
+</div>
+</section>
+
+<section class="delivery">
+<h2 class="section-title">Fast Doorstep Delivery</h2>
+<div class="delivery-box">
+<img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80" alt="Delivery rider">
+<div>
+<h2>We Bring It To Your Door</h2>
+<p>Simply contact us on WhatsApp, tell us what you need and where it should be delivered. Our rider will collect and deliver your order.</p>
+<br>
+<a class="btn" href="https://wa.me/923437490138?text=Hello%20Kot%20Addu%20Home%20Delivery%2C%20I%20want%20to%20place%20an%20order.">Order Now</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">How It Works</h2>
+<div class="steps">
+<div class="step"><h2>1️⃣</h2><h3>Place Order</h3><p>Send us your order on WhatsApp.</p></div>
+<div class="step"><h2>2️⃣</h2><h3>We Collect</h3><p>Our rider collects your required items.</p></div>
+<div class="step"><h2>3️⃣</h2><h3>Doorstep Delivery</h3><p>Your order is delivered to your location.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Our Delivery Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80">
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Customer Reviews</h2>
+<div class="cards">
+<div class="review"><h3>⭐⭐⭐⭐⭐</h3><p>"Fast service and very convenient. My order arrived safely."</p><b>— Local Customer</b></div>
+<div class="review"><h3>⭐⭐⭐⭐⭐</h3><p>"Very helpful delivery service in Kot Addu."</p><b>— Happy Customer</b></div>
+<div class="review"><h3>⭐⭐⭐⭐⭐</h3><p>"Easy WhatsApp ordering and good service."</p><b>— Local Customer</b></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact & Order</h2>
+<div class="contact">
+<div>
+<h2>Need a Delivery?</h2>
+<p>Send your order details through WhatsApp and we will contact you.</p>
+<br>
+<p><b>📍 Kot Addu, Punjab, Pakistan</b></p>
+<p><b>🕗 8:00 AM – 5:00 PM</b></p>
+<p><b>📱 WhatsApp: 0343-7490138</b></p>
+</div>
+
+<form onsubmit="sendWhatsApp(event)">
+<h3>Place Your Order</h3>
+<input id="name" type="text" placeholder="Your Name" required>
+<input id="phone" type="tel" placeholder="Your Phone Number" required>
+<input id="address" type="text" placeholder="Delivery Address" required>
+<textarea id="order" rows="5" placeholder="What do you want delivered?" required></textarea>
+<button class="btn" type="submit">Send Order on WhatsApp</button>
+</form>
+</div>
+</section>
+
+<section style="text-align:center;background:#222;color:white">
+<h2>Ready to Order?</h2>
+<p>Contact Kot Addu Home Delivery today.</p>
+<br>
+<a class="btn" href="https://wa.me/923437490138">WhatsApp Us Now</a>
+</section>
+
+<footer>
+<p>© 2026 Kot Addu Home Delivery. All Rights Reserved.</p>
+<p>Kot Addu, Punjab, Pakistan</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923437490138" aria-label="WhatsApp">✆</a>
+
+<script>
+function sendWhatsApp(event){
+event.preventDefault();
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let address=document.getElementById("address").value;
+let order=document.getElementById("order").value;
+
+let message=
+"Hello Kot Addu Home Delivery,%0A%0A"+
+"Name: "+encodeURIComponent(name)+"%0A"+
+"Phone: "+encodeURIComponent(phone)+"%0A"+
+"Address: "+encodeURIComponent(address)+"%0A"+
+"Order: "+encodeURIComponent(order);
+
+window.open("https://wa.me/923437490138?text="+message,"_blank");
+}
+</script>
+
+</body>
+</html>
